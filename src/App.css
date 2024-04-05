@@ -1,0 +1,98 @@
+:root {
+  --LightBlack: #141414;
+  --DarkGray: #1f1f1f;
+  --Gray: #333333;
+  --LightGray: #bbb7b7;
+  --White: #ffffff;
+  --Green: #c5f82a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--LightBlack);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  padding: 0 1.5rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.container {
+  display:flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--White);
+  background-color: var(--DarkGray);
+  border-radius: 20px;
+}
+
+.img-container {
+  margin: auto;
+  width: 90px;
+  height: 95px;
+  border-radius: 50%;
+}
+
+.section {
+  margin-top: 1.25rem;
+}
+
+.personal__name {
+  font-size: 1.5rem;
+  font-weight: 650;
+}
+
+.personal__address {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  color: var(--Green);
+}
+
+.social__intro {
+  font-size: 0.8rem;
+  font-weight: 550;
+  color: var(--LightGray);
+}
+
+.social__link {
+  display: block;
+  width: 100%;
+  border: none;
+  margin-top: 0.9rem;
+  color: var(--White);
+  font-family: "Inter", serif;
+  font-weight: 700;
+  background-color: var(--Gray);
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.social__link:hover {
+  background-color: var(--Green);
+  color: var(--LightBlack);
+}
+@media screen and (min-width: 1440px){
+  .card {
+    padding: 2.3rem;
+}
+}
