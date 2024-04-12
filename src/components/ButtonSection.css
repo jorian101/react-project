@@ -1,0 +1,18 @@
+.social__link {
+    display: block;
+    width: 100%;
+    border: none;
+    margin-top: 0.9rem;
+    color: var(--White);
+    font-family: "Inter", serif;
+    font-weight: 700;
+    background-color: var(--Gray);
+    padding: 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.social__link:hover {
+    background-color: var(--Green);
+    color: var(--LightBlack);
+}

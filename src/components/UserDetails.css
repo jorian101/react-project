@@ -1,0 +1,34 @@
+img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.img-container {
+    margin: auto;
+    width: 90px;
+    height: 95px;
+    border-radius: 50%;
+}
+
+.section {
+    margin-top: 1.25rem;
+}
+
+.personal__name {
+    font-size: 1.5rem;
+    font-weight: 650;
+}
+
+.personal__address {
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    color: var(--Green);
+}
+
+.social__intro {
+    font-size: 0.8rem;
+    font-weight: 550;
+    color: var(--LightGray);
+}
