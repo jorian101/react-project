@@ -14,21 +14,22 @@ img {
     margin-top: 1.25rem;
 }
 
-.personal__name {
+.character__name {
     font-size: 1.5rem;
     font-weight: 650;
 }
 
-.personal__address {
+.character__status {
     margin-top: 0.4rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: "Inter", sans-serif;
-    font-weight: 800;
+    font-weight: 500;
     color: var(--Green);
 }
 
-.social__intro {
-    font-size: 0.8rem;
-    font-weight: 550;
+.character__data {
+    margin-top: 0.4rem;
+    font-size: 1rem;
+    font-weight: 350;
     color: var(--LightGray);
 }

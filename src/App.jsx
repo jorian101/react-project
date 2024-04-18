@@ -3,22 +3,31 @@ import "./App.css";
 import { useEffect, useState } from "react";
 
 function App() {
-	const [users, setUsers] = useState([]);
+	const [characters, setCharacters] = useState([]);
+
 	useEffect(() => {
-		fetch("https://661037d00640280f219c98f1.mockapi.io/api/v2/users")
-			.then((res) => {
-				return res.json();
-			})
+		// Genera un número aleatorio dentro del rango de páginas disponibles
+		const randomPage = Math.floor(Math.random() * 42) + 1; // 42 es el número total de páginas según la API
+		fetch(`https://rickandmortyapi.com/api/character?page=${randomPage}`)
+			.then((res) => res.json())
 			.then((data) => {
-				setUsers(data);
-				// console.log(data);
+				// Se obtiene solo 10 personajes al azar
+				const randomCharacters = getRandom(data.results, 10);
+				setCharacters(randomCharacters);
 			});
-	}, []); //users es una arreglo, iteraremos con map
+	}, []);
+
+	// Función para obtener personajes al azar
+	const getRandom = (characters, count) => {
+		const shuffled = characters.sort(() => 0.5 - Math.random());
+		return shuffled.slice(0, count);
+	};
+
 	return (
 		<>
 			<div>
-				{users.map((user) => (
-					<Card key={user.id} user={user} />
+				{characters.map((character) => (
+					<Card key={character.id} character={character} />
 				))}
 			</div>
 		</>

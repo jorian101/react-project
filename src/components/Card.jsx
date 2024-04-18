@@ -1,17 +1,13 @@
 import React from "react";
-import UserDetails from "./UserDetails";
-import ButtonSection from "./ButtonSection";
+import CharacterDetails from "./CharacterDetails";
 import "./Card.css";
 
 const Card = (props) => {
-	const user = props.user;
-	// console.log(user);
-    const socialLinks = user["social-links"];
+	const character = props.character;
 	return (
 		<div className="body">
 			<div className="card" id="card">
-				{<UserDetails user={user} /> }
-				<ButtonSection socialLinks={socialLinks} />
+				{<CharacterDetails character={character} />}
 			</div>
 		</div>
 	);
