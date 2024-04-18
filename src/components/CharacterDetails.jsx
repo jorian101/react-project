@@ -1,6 +1,6 @@
 import React from "react";
 import "./CharacterDetails.css";
-const UserDetails = ({ character }) => {
+const CharacterDetails = ({ character }) => {
 	return (
 		<div>
 			<div className="img-container">
@@ -16,4 +16,4 @@ const UserDetails = ({ character }) => {
 	);
 };
 
-export default UserDetails;
+export default CharacterDetails;
