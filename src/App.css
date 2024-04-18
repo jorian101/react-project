@@ -1,98 +1,42 @@
-:root {
-  --LightBlack: #141414;
-  --DarkGray: #1f1f1f;
-  --Gray: #333333;
-  --LightGray: #bbb7b7;
-  --White: #ffffff;
-  --Green: #c5f82a;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-body {
-  background-color: var(--LightBlack);
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  height: 100vh;
-  padding: 0 1.5rem;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-img {
-  width: 100%;
-  border-radius: 50%;
-}
-
-.container {
-  display:flex;
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 350px;
-  margin: auto;
-  text-align: center;
-  padding: 1.5rem;
-  color: var(--White);
-  background-color: var(--DarkGray);
-  border-radius: 20px;
+  padding: 2em;
 }
 
-.img-container {
-  margin: auto;
-  width: 90px;
-  height: 95px;
-  border-radius: 50%;
-}
-
-.section {
-  margin-top: 1.25rem;
-}
-
-.personal__name {
-  font-size: 1.5rem;
-  font-weight: 650;
-}
-
-.personal__address {
-  margin-top: 0.4rem;
-  font-size: 0.8rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 800;
-  color: var(--Green);
-}
-
-.social__intro {
-  font-size: 0.8rem;
-  font-weight: 550;
-  color: var(--LightGray);
-}
-
-.social__link {
-  display: block;
-  width: 100%;
-  border: none;
-  margin-top: 0.9rem;
-  color: var(--White);
-  font-family: "Inter", serif;
-  font-weight: 700;
-  background-color: var(--Gray);
-  padding: 0.8rem;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.social__link:hover {
-  background-color: var(--Green);
-  color: var(--LightBlack);
-}
-@media screen and (min-width: 1440px){
-  .card {
-    padding: 2.3rem;
-}
+.read-the-docs {
+  color: #888;
 }
