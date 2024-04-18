@@ -1,7 +1,6 @@
 import React, { useState, useEffect} from "react";
 import "./UserDetails.css";
 const UserDetails = ({user}) => {
-	// const user = props.user;
 	return (
 		<div>
 			<div className="img-container">

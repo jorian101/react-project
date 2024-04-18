@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 function App() {
 	const [users, setUsers] = useState([]);
 	useEffect(() => {
-		fetch("https://661037d00640280f219c98f1.mockapi.io/api/v2/users")
+		fetch("https://66205de03bf790e070afa56a.mockapi.io/api/v2/users")
 			.then((res) => {
 				return res.json();
 			})

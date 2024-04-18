@@ -5,7 +5,6 @@ import "./Card.css";
 
 const Card = (props) => {
 	const user = props.user;
-	// console.log(user);
     const socialLinks = user["social-links"];
 	return (
 		<div className="body">

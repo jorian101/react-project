@@ -1,20 +1,26 @@
 .body {
-    background-color: var(--LightBlack);
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    height: 100vh;
-    padding: 0 1.5rem;
-  }
-  
+  background-color: var(--LightBlack);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  padding: 0 1.5rem;
+}
+
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 350px;
-    margin: auto;
-    text-align: center;
-    padding: 1.5rem;
-    color: var(--White);
-    background-color: var(--DarkGray);
-    border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--White);
+  background-color: var(--DarkGray);
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    padding: 2.3rem;
+  }
 }
