@@ -1,0 +1,40 @@
+.episodes {
+  margin-top: 2rem;
+  margin-bottom: 50px;
+}
+
+.episodes h2 {
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  color: var(--Green);
+}
+
+.episodes h3 {
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  color: var(--LightGray);
+}
+
+.episodes__section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.episode__item {
+  flex: 1;
+  margin: 0 5px;
+}
+
+.episode__item img {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.episode__item p {
+  margin-top: 1.5rem;
+}
