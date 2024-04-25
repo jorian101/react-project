@@ -6,7 +6,7 @@ const Episodes = ({ character }) => {
 
     useEffect(() => {
         async function fetchEpisodes() {
-            const promises = character.episode.map(url =>
+            const promises = character.episode.slice(0, 5).map(url => // Limita a 5 episodios
                 fetch(url).then(response => response.json())
             );
             const episodesData = await Promise.all(promises);

@@ -1,15 +1,16 @@
 import React from "react";
 import CharacterDetails from "./CharacterDetails";
 import "./Card.css";
+import { NavLink } from "react-router-dom";
 
-const Card = (props) => {
-	const character = props.character;
+const Card = ({ character }) => {
 	return (
-		<div className="body">
+		//Hacia donde ira
+		<NavLink to={`/character?id=${character.id}`}>
 			<div className="card" id="card">
 				{<CharacterDetails character={character} />}
 			</div>
-		</div>
+		</NavLink>
 	);
 };
 

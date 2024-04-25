@@ -1,9 +1,9 @@
-.button {
+.button-home {
     display: flex;
     justify-content: center;
 }
 
-.button__link {
+button {
     padding: 20px 45px;
     background-color: var(--Gray);
     color: var(--White);
@@ -13,7 +13,7 @@
     font-size: 18px ;
 }
 
-.button__link:hover {
+button:hover {
     background-color: var(--Green);
     color: var(--LightBlackack);
 }

@@ -11,25 +11,26 @@
 }
 
 .section {
-    margin-top: 1.25rem;
+    padding: 0;
 }
 
-.character__name {
-    font-size: 1.5rem;
+.section h2 {
+    font-size: 1.2rem;
     font-weight: 650;
+    height: 40px;
 }
 
-.character__status {
+.section h3 {
     margin-top: 0.4rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: "Inter", sans-serif;
     font-weight: 500;
     color: var(--Green);
 }
 
-.character__data {
+.section P {
     margin-top: 0.4rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 350;
     color: var(--LightGray);
 }
