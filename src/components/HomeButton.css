@@ -1,0 +1,19 @@
+.button-home {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 20px 45px;
+    background-color: var(--Gray);
+    color: var(--White);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px ;
+}
+
+button:hover {
+    background-color: var(--Green);
+    color: var(--LightBlackack);
+}
